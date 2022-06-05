@@ -1,0 +1,13 @@
+git status                            = mostra situação da pasta
+git add *                             = para atualizar
+git commit -m " nome"                 = para fazer commit
+git push origin master                = para jogar GitHub
+clear                                 = limpar tela
+cd /                                  = ir para pasta
+cd ..                                 = voltar um nível da pasta
+ls                                    = listar pasta
+Ctrl + L                              = limpa listar
+TAB                                   = auto completa a frase
+mkdir                                 = cria uma pasta
+echo >                                = cria um arquivo .txt
+seta do teclado                       = busca palavras já digitadas
