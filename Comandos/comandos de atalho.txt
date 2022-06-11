@@ -1,4 +1,4 @@
-git status                            = mostra situação da pasta
+pushgit status                            = mostra situação da pasta
 git add *                             = para atualizar
 git commit -m " nome"                 = para fazer commit
 git push origin master                = para jogar GitHub
