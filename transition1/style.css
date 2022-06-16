@@ -1,17 +1,19 @@
 body {
     font-family: sans-serif;
 }
+
 .container {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items:center ;
+    align-items:center;
 }
+
 .card{
     height: 400px;
     width: 500px;
-    background-image: m_7.pgp;
+    background-image:url(./m_7.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +24,8 @@ body {
     color: white;
     cursor: pointer;
     transition: 0.3s;
-}
+}  
+
 .card-wrapper{
     text-align: center;
     display: flex;
@@ -31,17 +34,18 @@ body {
     align-items: center;
     position: relative;
 }
-.card-wrapper::before{
-    content: '';
-    position: absolute;
+
+.card-wrapper::before {
+    content:'';
+    position:absolute;
     height: 100px;
     width: 100px;
-    display: black;
-    border:solid white;
-    border: 1px solid white;
-    opacity: 0;
-    transition: 0.3s;
+    display:black;
+    border:1px solid white;
+    opacity:0;
+    transition:0.3s;
 }
+
 .card-wrapper h2 {
     font-size: 40px;
     text-transform: uppercase;
@@ -49,24 +53,30 @@ body {
     margin: 0;
     transition: 0.3s;
 }
-.card-wrapper p { 
+
+.card-wrapper p {
     font-size: 0;
+    visibility: hidden;
     opacity: 0;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
 }
-.card:hover{
-    filter: unset;    
+
+.card:hover {
+    filter: unset;
 }
-.card-wrapper > .card-wrapper::before {
+
+.card:hover > .card-wrapper::before {
     height: 300px;
     width: 400px;
     opacity: 1;
 }
-.card::before > .card-wrapper p {
+
+.card:hover > .card-wrapper p{
     opacity: 1;
     visibility: visible;
     font-size: 14px;
 
 }
+
